@@ -1,1 +1,5 @@
-.idea/
+.idea
+bazel-bin
+bazel-medium-bazel-getting-started
+bazel-out
+bazel-testlogs
