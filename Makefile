@@ -5,8 +5,8 @@ APP2=//src/app2:hello
 ALL:
 	@echo " -- ALL --"
 
-build: build_app1 build_app2
-	@echo " -- build END --"
+build: 
+	bazel build //...
 
 build_app1:
 	@echo ""
@@ -25,3 +25,6 @@ run_app1:
 run_app2:
 	@echo ""
 	bazel run $(APP2)
+
+test:
+	bazel test //...
